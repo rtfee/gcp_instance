@@ -10,5 +10,5 @@ output "instance_name" {
 
 output "instance_ip" {
   description = "Instance ID"
-  value       = google_compute_instance.default.network_ip
+  value       = google_compute_instance.default.network_interface.network_ip
 }
