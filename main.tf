@@ -1,11 +1,11 @@
   provider "google" {
-    region      = var.region
+    region      = "us-east4"
 }
 
 resource "google_compute_instance" "default" {
-  name         = var.instane_name
-  machine_type = var.instance_type
-  zone         = var.zone
+  name         = "test"
+  machine_type = "n1-standard-1"
+  zone         = "us-east4-a"
 
   tags = ["foo", "bar"]
 
